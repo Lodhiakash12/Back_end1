@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<conio.h>
+
+void swap(int *x,int *y)
+{
+	temp=*x;
+	*x=*y;
+	*y=temp;
+}
+void main()
+{
+	int a=5,b=8,temp;
+	clrscr();

@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+	int arr[50],i;
+	clrscr();
+	for(i=0;i<5;i++);
+	{
+		printf("Enter A[%d]:",arr);
+		scanf("%d",&arr[i]);
+
+	}
+
+
+	for(int j=0;j<5;j++)
+	{
+		printf("A[%d]:%d\n",j,arr[i]);
+	}
+
+	getch();
+}
