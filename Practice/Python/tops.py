@@ -7,12 +7,17 @@ class Tops:
         print("Hello",sname,",Your Course:",course,"Fees is",fees)
     def installment(self,amount):
         if self.fees>0:
-            self.amount=amount 
-            self.fees=self.fees-amount
-            self.count=self.count+1
-            print("Payment Received:",amount)
-            print("Installment Number:",self.count)
-            print("Remaining Fees:",self.fees)
+            self.amount=amount
+            if self.amount>self.fees:
+                print("The Amount Exceeds The Remaining Fees",self.fees)
+            else:
+                self.fees=self.fees-amount
+                self.count=self.count+1
+                print("Payment Received:",amount)
+                print("Installment Number:",self.count)
+                print("Remaining Fees:",self.fees)
+                    
+             
         elif self.fees==0:
             print("All Fees Paid")
         else:
